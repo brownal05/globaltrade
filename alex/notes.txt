@@ -1,0 +1,7 @@
+
+Watch out for models simply predicting only yesterdays price. Instead calculate the difference between consecutive time steps. 
+https://www.cs.cmu.edu/afs/cs/academic/class/15782-f06/slides/timeseries.pdf
+    - Illustrates fundamentals of a generative model for timeseries. Use a generative model. For every point x[ti] in the past, train the generative model with what preceded ti as the Inputs and what folled ti as the Desired outcome. 
+    Run model to predict x[t+s] from x[t]
+    
+Linear Sytems ie Digital Signal Processing theory is used to convert your timeseriees into a frequency and use these methods to predcit future prices
